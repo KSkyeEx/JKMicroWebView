@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DB70252219AB4D600702B5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70251219AB4D600702B5F /* AppDelegate.m */; };
+		9DB70255219AB4D600702B5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70254219AB4D600702B5F /* ViewController.m */; };
+		9DB70258219AB4D600702B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70256219AB4D600702B5F /* Main.storyboard */; };
+		9DB7025A219AB4D700702B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70259219AB4D700702B5F /* Assets.xcassets */; };
+		9DB7025D219AB4D700702B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7025B219AB4D700702B5F /* LaunchScreen.storyboard */; };
+		9DB70260219AB4D700702B5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7025F219AB4D700702B5F /* main.m */; };
+		9DB7026A219AB4D800702B5F /* JKMicroWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70269219AB4D800702B5F /* JKMicroWebViewTests.m */; };
+		9DB70275219AB4D800702B5F /* JKMicroWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70274219AB4D800702B5F /* JKMicroWebViewUITests.m */; };
+		9DB7028F219AB52B00702B5F /* JKMicroJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */; };
+		9DB70290219AB52B00702B5F /* img_weberror.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70285219AB52A00702B5F /* img_weberror.png */; };
+		9DB70291219AB52B00702B5F /* JKMicroWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70286219AB52A00702B5F /* JKMicroWebView.m */; };
+		9DB70292219AB52B00702B5F /* JKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70289219AB52B00702B5F /* JKWebViewController.m */; };
+		9DB70293219AB52B00702B5F /* JKMicroJSScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */; };
+		9DB70294219AB52B00702B5F /* JKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7028E219AB52B00702B5F /* JKProgressView.m */; };
+		9DB70299219AB73000702B5F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70298219AB73000702B5F /* index.html */; };
+		9DB7029C219ABADD00702B5F /* TestWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7029B219ABADD00702B5F /* TestWebController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DB70266219AB4D800702B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DB70245219AB4D600702B5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB7024C219AB4D600702B5F;
+			remoteInfo = JKMicroWebView;
+		};
+		9DB70271219AB4D800702B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DB70245219AB4D600702B5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB7024C219AB4D600702B5F;
+			remoteInfo = JKMicroWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DB7024D219AB4D600702B5F /* JKMicroWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKMicroWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB70250219AB4D600702B5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DB70251219AB4D600702B5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DB70253219AB4D600702B5F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9DB70254219AB4D600702B5F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DB70257219AB4D600702B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DB70259219AB4D700702B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB7025C219AB4D700702B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DB7025E219AB4D700702B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB7025F219AB4D700702B5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DB70265219AB4D800702B5F /* JKMicroWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKMicroWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB70269219AB4D800702B5F /* JKMicroWebViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKMicroWebViewTests.m; sourceTree = "<group>"; };
+		9DB7026B219AB4D800702B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB70270219AB4D800702B5F /* JKMicroWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKMicroWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB70274219AB4D800702B5F /* JKMicroWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKMicroWebViewUITests.m; sourceTree = "<group>"; };
+		9DB70276219AB4D800702B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroJSBridge.m; sourceTree = "<group>"; };
+		9DB70284219AB52A00702B5F /* JKMicroWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroWebView.h; sourceTree = "<group>"; };
+		9DB70285219AB52A00702B5F /* img_weberror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_weberror.png; sourceTree = "<group>"; };
+		9DB70286219AB52A00702B5F /* JKMicroWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroWebView.m; sourceTree = "<group>"; };
+		9DB70287219AB52A00702B5F /* JKMicroJSScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroJSScript.h; sourceTree = "<group>"; };
+		9DB70288219AB52A00702B5F /* JKWebViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebViewHeader.h; sourceTree = "<group>"; };
+		9DB70289219AB52B00702B5F /* JKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebViewController.m; sourceTree = "<group>"; };
+		9DB7028A219AB52B00702B5F /* JKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKProgressView.h; sourceTree = "<group>"; };
+		9DB7028B219AB52B00702B5F /* JKMicroJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroJSBridge.h; sourceTree = "<group>"; };
+		9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroJSScript.m; sourceTree = "<group>"; };
+		9DB7028D219AB52B00702B5F /* JKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebViewController.h; sourceTree = "<group>"; };
+		9DB7028E219AB52B00702B5F /* JKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKProgressView.m; sourceTree = "<group>"; };
+		9DB70298219AB73000702B5F /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9DB7029A219ABADD00702B5F /* TestWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWebController.h; sourceTree = "<group>"; };
+		9DB7029B219ABADD00702B5F /* TestWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWebController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DB7024A219AB4D600702B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB70262219AB4D800702B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB7026D219AB4D800702B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DB70244219AB4D600702B5F = {
+			isa = PBXGroup;
+			children = (
+				9DB7024F219AB4D600702B5F /* JKMicroWebView */,
+				9DB70268219AB4D800702B5F /* JKMicroWebViewTests */,
+				9DB70273219AB4D800702B5F /* JKMicroWebViewUITests */,
+				9DB7024E219AB4D600702B5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DB7024E219AB4D600702B5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DB7024D219AB4D600702B5F /* JKMicroWebView.app */,
+				9DB70265219AB4D800702B5F /* JKMicroWebViewTests.xctest */,
+				9DB70270219AB4D800702B5F /* JKMicroWebViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DB7024F219AB4D600702B5F /* JKMicroWebView */ = {
+			isa = PBXGroup;
+			children = (
+				9DB70250219AB4D600702B5F /* AppDelegate.h */,
+				9DB70251219AB4D600702B5F /* AppDelegate.m */,
+				9DB70298219AB73000702B5F /* index.html */,
+				9DB70259219AB4D700702B5F /* Assets.xcassets */,
+				9DB7025E219AB4D700702B5F /* Info.plist */,
+				9DB70285219AB52A00702B5F /* img_weberror.png */,
+				9DB70282219AB50E00702B5F /* JKMicroWebView */,
+				9DB7025B219AB4D700702B5F /* LaunchScreen.storyboard */,
+				9DB7025F219AB4D700702B5F /* main.m */,
+				9DB70256219AB4D600702B5F /* Main.storyboard */,
+				9DB70253219AB4D600702B5F /* ViewController.h */,
+				9DB70254219AB4D600702B5F /* ViewController.m */,
+				9DB7029A219ABADD00702B5F /* TestWebController.h */,
+				9DB7029B219ABADD00702B5F /* TestWebController.m */,
+			);
+			path = JKMicroWebView;
+			sourceTree = "<group>";
+		};
+		9DB70268219AB4D800702B5F /* JKMicroWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DB70269219AB4D800702B5F /* JKMicroWebViewTests.m */,
+				9DB7026B219AB4D800702B5F /* Info.plist */,
+			);
+			path = JKMicroWebViewTests;
+			sourceTree = "<group>";
+		};
+		9DB70273219AB4D800702B5F /* JKMicroWebViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DB70274219AB4D800702B5F /* JKMicroWebViewUITests.m */,
+				9DB70276219AB4D800702B5F /* Info.plist */,
+			);
+			path = JKMicroWebViewUITests;
+			sourceTree = "<group>";
+		};
+		9DB70282219AB50E00702B5F /* JKMicroWebView */ = {
+			isa = PBXGroup;
+			children = (
+				9DB70295219AB5E900702B5F /* JKMicroJSBridge */,
+				9DB70288219AB52A00702B5F /* JKWebViewHeader.h */,
+				9DB70296219AB60800702B5F /* JKProgressView */,
+				9DB70297219AB63400702B5F /* JKWebViewController */,
+			);
+			path = JKMicroWebView;
+			sourceTree = "<group>";
+		};
+		9DB70295219AB5E900702B5F /* JKMicroJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				9DB7028B219AB52B00702B5F /* JKMicroJSBridge.h */,
+				9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */,
+				9DB70287219AB52A00702B5F /* JKMicroJSScript.h */,
+				9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */,
+			);
+			path = JKMicroJSBridge;
+			sourceTree = "<group>";
+		};
+		9DB70296219AB60800702B5F /* JKProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				9DB7028A219AB52B00702B5F /* JKProgressView.h */,
+				9DB7028E219AB52B00702B5F /* JKProgressView.m */,
+			);
+			path = JKProgressView;
+			sourceTree = "<group>";
+		};
+		9DB70297219AB63400702B5F /* JKWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DB70284219AB52A00702B5F /* JKMicroWebView.h */,
+				9DB70286219AB52A00702B5F /* JKMicroWebView.m */,
+				9DB7028D219AB52B00702B5F /* JKWebViewController.h */,
+				9DB70289219AB52B00702B5F /* JKWebViewController.m */,
+			);
+			path = JKWebViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DB7024C219AB4D600702B5F /* JKMicroWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB70279219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebView" */;
+			buildPhases = (
+				9DB70249219AB4D600702B5F /* Sources */,
+				9DB7024A219AB4D600702B5F /* Frameworks */,
+				9DB7024B219AB4D600702B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKMicroWebView;
+			productName = JKMicroWebView;
+			productReference = 9DB7024D219AB4D600702B5F /* JKMicroWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DB70264219AB4D800702B5F /* JKMicroWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB7027C219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebViewTests" */;
+			buildPhases = (
+				9DB70261219AB4D800702B5F /* Sources */,
+				9DB70262219AB4D800702B5F /* Frameworks */,
+				9DB70263219AB4D800702B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB70267219AB4D800702B5F /* PBXTargetDependency */,
+			);
+			name = JKMicroWebViewTests;
+			productName = JKMicroWebViewTests;
+			productReference = 9DB70265219AB4D800702B5F /* JKMicroWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DB7026F219AB4D800702B5F /* JKMicroWebViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB7027F219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebViewUITests" */;
+			buildPhases = (
+				9DB7026C219AB4D800702B5F /* Sources */,
+				9DB7026D219AB4D800702B5F /* Frameworks */,
+				9DB7026E219AB4D800702B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB70272219AB4D800702B5F /* PBXTargetDependency */,
+			);
+			name = JKMicroWebViewUITests;
+			productName = JKMicroWebViewUITests;
+			productReference = 9DB70270219AB4D800702B5F /* JKMicroWebViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DB70245219AB4D600702B5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = byRong;
+				TargetAttributes = {
+					9DB7024C219AB4D600702B5F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9DB70264219AB4D800702B5F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9DB7024C219AB4D600702B5F;
+					};
+					9DB7026F219AB4D800702B5F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9DB7024C219AB4D600702B5F;
+					};
+				};
+			};
+			buildConfigurationList = 9DB70248219AB4D600702B5F /* Build configuration list for PBXProject "JKMicroWebView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DB70244219AB4D600702B5F;
+			productRefGroup = 9DB7024E219AB4D600702B5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB7024C219AB4D600702B5F /* JKMicroWebView */,
+				9DB70264219AB4D800702B5F /* JKMicroWebViewTests */,
+				9DB7026F219AB4D800702B5F /* JKMicroWebViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DB7024B219AB4D600702B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB70299219AB73000702B5F /* index.html in Resources */,
+				9DB7025D219AB4D700702B5F /* LaunchScreen.storyboard in Resources */,
+				9DB7025A219AB4D700702B5F /* Assets.xcassets in Resources */,
+				9DB70258219AB4D600702B5F /* Main.storyboard in Resources */,
+				9DB70290219AB52B00702B5F /* img_weberror.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB70263219AB4D800702B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB7026E219AB4D800702B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DB70249219AB4D600702B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB70294219AB52B00702B5F /* JKProgressView.m in Sources */,
+				9DB70291219AB52B00702B5F /* JKMicroWebView.m in Sources */,
+				9DB70255219AB4D600702B5F /* ViewController.m in Sources */,
+				9DB7029C219ABADD00702B5F /* TestWebController.m in Sources */,
+				9DB70292219AB52B00702B5F /* JKWebViewController.m in Sources */,
+				9DB7028F219AB52B00702B5F /* JKMicroJSBridge.m in Sources */,
+				9DB70260219AB4D700702B5F /* main.m in Sources */,
+				9DB70252219AB4D600702B5F /* AppDelegate.m in Sources */,
+				9DB70293219AB52B00702B5F /* JKMicroJSScript.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB70261219AB4D800702B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB7026A219AB4D800702B5F /* JKMicroWebViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB7026C219AB4D800702B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB70275219AB4D800702B5F /* JKMicroWebViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DB70267219AB4D800702B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB7024C219AB4D600702B5F /* JKMicroWebView */;
+			targetProxy = 9DB70266219AB4D800702B5F /* PBXContainerItemProxy */;
+		};
+		9DB70272219AB4D800702B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB7024C219AB4D600702B5F /* JKMicroWebView */;
+			targetProxy = 9DB70271219AB4D800702B5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DB70256219AB4D600702B5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB70257219AB4D600702B5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DB7025B219AB4D700702B5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB7025C219AB4D700702B5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DB70277219AB4D800702B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9DB70278219AB4D800702B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DB7027A219AB4D800702B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9DB7027B219AB4D800702B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9DB7027D219AB4D800702B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKMicroWebView.app/JKMicroWebView";
+			};
+			name = Debug;
+		};
+		9DB7027E219AB4D800702B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKMicroWebView.app/JKMicroWebView";
+			};
+			name = Release;
+		};
+		9DB70280219AB4D800702B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKMicroWebView;
+			};
+			name = Debug;
+		};
+		9DB70281219AB4D800702B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMEU432463;
+				INFOPLIST_FILE = JKMicroWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bRong.JKMicroWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKMicroWebView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DB70248219AB4D600702B5F /* Build configuration list for PBXProject "JKMicroWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB70277219AB4D800702B5F /* Debug */,
+				9DB70278219AB4D800702B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB70279219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB7027A219AB4D800702B5F /* Debug */,
+				9DB7027B219AB4D800702B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB7027C219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB7027D219AB4D800702B5F /* Debug */,
+				9DB7027E219AB4D800702B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB7027F219AB4D800702B5F /* Build configuration list for PBXNativeTarget "JKMicroWebViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB70280219AB4D800702B5F /* Debug */,
+				9DB70281219AB4D800702B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DB70245219AB4D600702B5F /* Project object */;
+}

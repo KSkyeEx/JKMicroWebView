@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>JS交互OC</title>
+    <meta charset="utf-8">
+        </head>
+
+<!--   CSS语法-->
+<style type='text/css'>
+    img{
+        cursor:pointer;
+    }
+</style>
+
+<body>
+    
+    <h2 style="text-align:center">Welcome To You</h2>
+    
+    <p style="text-align:center"> <button id="btn1" type = "button" onclick = "jsToOcFunction1()" > JS调用OC：不带参数  </button> </p>
+    
+    <p style="text-align:center"> <button id="btn2" type = "button" onclick = "jsToOcFunction2()"> JS调用OC：带参数  </button> </p>
+    
+    <p style="text-align:center"> <button id="btn3" type = "button" onclick = "showAlert()" > oc捕获到html的弹出框  </button> </p>
+    
+    <!--        音频-->
+    <p style="text-align:center"> <audio controls="controls" height="100" width="100">
+        <source src="http://up.mcyt.net/?down/47548.mp3" type="audio/mp3" />
+        <source src="http://up.mcyt.net/?down/47548.ogg" type="audio/ogg" />
+        <embed height="100" width="100" src="http://up.mcyt.net/?down/47548.mp3" />
+    </audio> </p>
+    
+    <!--         视频-->
+    <p style="text-align:center"> <video width="320" height="240" controls="controls" preload="auto" poster="http://a.hiphotos.baidu.com/zhidao/pic/item/0d338744ebf81a4cd90f1d3ad72a6059252da600.jpg">
+        <source src="http://baobab.kaiyanapp.com/api/v1/playUrl?vid=39183&editionType=normal&source=qcloud" type="video/mp4" />
+        <source src="http://baobab.kaiyanapp.com/api/v1/playUrl?vid=39183&editionType=normal&source=qcloud" type="video/ogg" />
+        <source src="http://baobab.wdjcdn.com/1455782903700jy" type="video/webm" />
+        <object data="http://baobab.kaiyanapp.com/api/v1/playUrl?vid=39183&editionType=normal&source=qcloud" width="320" height="240">
+            <embed src="http://baobab.kaiyanapp.com/api/v1/playUrl?vid=39183&editionType=normal&source=qcloud" width="320" height="240" />
+        </object>
+    </video> </p>
+    
+    <!--        JS语法-->
+    <script type = "text/javascript">
+        
+        function jsToOcFunction1()
+        {
+            window.JKMicroJSBridge.callHandler('jsToOcFunction1',function(response) {
+                                               alert("收到了回调1")
+                                               })
+        }
+    
+    function jsToOcFunction2()
+    {
+        window.JKMicroJSBridge.callHandler('jsToOcFunction2',{'data':'我是参数'},function(response) {
+                                           alert(response)
+                                           })
+    }
+    
+    function showAlert()
+    {
+        alert("被OC截获到了");
+    }
+    
+    //OC调用JS改变背景色
+    window.JKMicroJSBridge.registerHandler('changeColor', function(data, responseCallback) {
+                                           document.body.style.backgroundColor = randomColor();
+                                           var responseData = { 'Javascript Says':'Right back atcha!' }
+                                           responseCallback(responseData)
+                                           })
+                                           
+                                           //随机生成颜色
+                                           function randomColor()
+                                           {
+                                               var r=Math.floor(Math.random()*256);
+                                               var g=Math.floor(Math.random()*256);
+                                               var b=Math.floor(Math.random()*256);
+                                               return "rgb("+r+','+g+','+b+")";//所有方法的拼接都可以用ES6新特性`其他字符串{$变量名}`替换
+                                           }
+    
+        </script>
+    
+</body>
+
+</html>
