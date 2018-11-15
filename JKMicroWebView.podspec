@@ -25,8 +25,12 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/JokerKin/JKMicroWebView.git", :tag => "#{s.version}" }
 
-  s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/JKMicroWebView/JKMicroWebView/**/*.{h,m}"
+  s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/**/*.{h,m}"
 
-#s.public_header_files = "Pod/Classes/**/*.h"
-
+  s.subspec 'JKMicroJSBridge' do |sp|
+    sp.source_files = "JKMicroWebView/JKMicroWebView/JKMicroJSBridge/**/*.{h,m}"
+  end
+  s.subspec 'JKProgressView' do |sp|
+    sp.source_files = "JKMicroWebView/JKMicroWebView/JKProgressView/**/*.{h,m}"
+  end
 end
