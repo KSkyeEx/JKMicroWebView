@@ -163,43 +163,19 @@
 		9DB70282219AB50E00702B5F /* JKMicroWebView */ = {
 			isa = PBXGroup;
 			children = (
-				9DB70295219AB5E900702B5F /* JKMicroJSBridge */,
-				9DB70288219AB52A00702B5F /* JKWebViewHeader.h */,
-				9DB70296219AB60800702B5F /* JKProgressView */,
-				9DB70297219AB63400702B5F /* JKWebViewController */,
-			);
-			path = JKMicroWebView;
-			sourceTree = "<group>";
-		};
-		9DB70295219AB5E900702B5F /* JKMicroJSBridge */ = {
-			isa = PBXGroup;
-			children = (
 				9DB7028B219AB52B00702B5F /* JKMicroJSBridge.h */,
 				9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */,
 				9DB70287219AB52A00702B5F /* JKMicroJSScript.h */,
 				9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */,
-			);
-			path = JKMicroJSBridge;
-			sourceTree = "<group>";
-		};
-		9DB70296219AB60800702B5F /* JKProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				9DB7028A219AB52B00702B5F /* JKProgressView.h */,
-				9DB7028E219AB52B00702B5F /* JKProgressView.m */,
-			);
-			path = JKProgressView;
-			sourceTree = "<group>";
-		};
-		9DB70297219AB63400702B5F /* JKWebViewController */ = {
-			isa = PBXGroup;
-			children = (
 				9DB70284219AB52A00702B5F /* JKMicroWebView.h */,
 				9DB70286219AB52A00702B5F /* JKMicroWebView.m */,
+				9DB7028A219AB52B00702B5F /* JKProgressView.h */,
+				9DB7028E219AB52B00702B5F /* JKProgressView.m */,
 				9DB7028D219AB52B00702B5F /* JKWebViewController.h */,
 				9DB70289219AB52B00702B5F /* JKWebViewController.m */,
+				9DB70288219AB52A00702B5F /* JKWebViewHeader.h */,
 			);
-			path = JKWebViewController;
+			path = JKMicroWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
