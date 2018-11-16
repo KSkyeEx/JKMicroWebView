@@ -12,5 +12,7 @@
 
 #import "JKWebViewController.h"
 #import "JKProgressView.h"
+#import "JKMicroWebView.h"
+#import "JKMicroJSBridge.h"
 
 #endif /* WKWebViewExtension_h */
