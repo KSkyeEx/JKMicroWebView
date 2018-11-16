@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JKMicroWebView"
-  s.version      = "0.0.4"
+  s.version      = "0.0.6"
   s.summary      = "对WKWebView的封装，提供了JS和OC交互的功能"
   s.description  = "对WKWebView的封装，提供了JS和OC交互的功能。"
   s.homepage     = "https://github.com/JokerKin/JKMicroWebView"
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
 
-  s.public_header_files = 'JKMicroWebView/JKMicroWebView/JKMicroWebView/JKWebViewHeader.h'
+  s.public_header_files = 'JKMicroWebView/**/**/JKWebViewHeader.h'
+  s.private_header_files = 'JKMicroWebView/**/**/{JKMicroJSBridge,JKMicroJSScript,JKMicroWebView,JKWebViewController,JKProgressView}.h'
   s.source       = { :git => "https://github.com/JokerKin/JKMicroWebView.git", :tag => "#{s.version}", :submodules => true}
 
   s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/JKMicroWebView/**/*.{h,m}"
