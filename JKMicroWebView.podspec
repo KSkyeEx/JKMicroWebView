@@ -9,28 +9,24 @@
 Pod::Spec.new do |s|
 
   s.name         = "JKMicroWebView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "对WKWebView的封装，提供了JS和OC交互的功能"
-
   s.description  = "对WKWebView的封装，提供了JS和OC交互的功能。"
-
   s.homepage     = "https://github.com/JokerKin/JKMicroWebView"
   s.license      = "MIT"
-
   s.author             = { "joker" => "https://github.com/JokerKin" }
-
   s.platform     = :ios, "8.0"
-
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/JokerKin/JKMicroWebView.git", :tag => "#{s.version}" }
+  s.public_header_files = 'JKMicroWebView/JKMicroWebView/JKMicroWebView/JKWebViewHeader.h'
+  s.source       = { :git => "https://github.com/JokerKin/JKMicroWebView.git", :tag => "#{s.version}", :submodules => true}
 
-  s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/**/*.{h,m}"
+  s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/JKMicroWebView/**/*.{h,m}"
 
   s.subspec 'JKMicroJSBridge' do |sp|
-    sp.source_files = "JKMicroWebView/JKMicroWebView/JKMicroJSBridge/**/*.{h,m}"
+    sp.source_files = "JKMicroWebView/JKMicroWebView/JKMicroWebView/JKMicroJSBridge/**/*.{h,m}"
   end
   s.subspec 'JKProgressView' do |sp|
-    sp.source_files = "JKMicroWebView/JKMicroWebView/JKProgressView/**/*.{h,m}"
+    sp.source_files = "JKMicroWebView/JKMicroWebView/JKMicroWebView/JKProgressView/**/*.{h,m}"
   end
 end
