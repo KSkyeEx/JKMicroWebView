@@ -8,10 +8,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JKMicroWebView.h"
+#import "JKMicroView.h"
 #import "JKMicroJSBridge.h"
 
-@class JKWebViewController;
+@class JKMicroController;
 
 #ifndef BRI_REQUIRES_SUPER
 #if __has_attribute(objc_requires_super)
@@ -25,18 +25,18 @@
 @protocol WKWebViewControllerDelegate <NSObject>
 
 @optional
-- (void)webViewControllerWillGoBack:(JKWebViewController *)webViewController;
-- (void)webViewControllerWillGoForward:(JKWebViewController *)webViewController;
-- (void)webViewControllerWillReload:(JKWebViewController *)webViewController;
-- (void)webViewControllerWillStop:(JKWebViewController *)webViewController;
-- (void)webViewControllerDidStartLoad:(JKWebViewController *)webViewController;
-- (void)webViewControllerDidFinishLoad:(JKWebViewController *)webViewController;
-- (void)webViewController:(JKWebViewController *)webViewController didFailLoadWithError:(NSError *)error;
+- (void)webViewControllerWillGoBack:(JKMicroController *)webViewController;
+- (void)webViewControllerWillGoForward:(JKMicroController *)webViewController;
+- (void)webViewControllerWillReload:(JKMicroController *)webViewController;
+- (void)webViewControllerWillStop:(JKMicroController *)webViewController;
+- (void)webViewControllerDidStartLoad:(JKMicroController *)webViewController;
+- (void)webViewControllerDidFinishLoad:(JKMicroController *)webViewController;
+- (void)webViewController:(JKMicroController *)webViewController didFailLoadWithError:(NSError *)error;
 @end
 
-@interface JKWebViewController : UIViewController
+@interface JKMicroController : UIViewController
 //当前Web控件
-@property (nonatomic, strong, readonly) JKMicroWebView *webView;
+@property (nonatomic, strong, readonly) JKMicroView *webView;
 //与JS交互的bridge
 @property (nonatomic, strong, readonly) JKMicroJSBridge *bridge;
 //进度条的进度颜色
@@ -71,7 +71,7 @@
 
 #pragma mark - BRIWebViewController (SubclassHooks)
 //以下方法供子类调用
-@interface JKWebViewController (SubclassHooks)
+@interface JKMicroController (SubclassHooks)
 /**
  如果needInterceptReq设置为YES,会调用该方法,为了保证流程可以正常执行,当needInterceptReq设置为YES时子类务必重写该方法
 

@@ -7,9 +7,9 @@
 //  reserved.
 //
 
-#import "JKMicroWebView.h"
+#import "JKMicroView.h"
 
-@implementation JKMicroWebView
+@implementation JKMicroView
 
 #pragma mark - Life Cycle
 - (instancetype)initWithFrame:(CGRect)frame

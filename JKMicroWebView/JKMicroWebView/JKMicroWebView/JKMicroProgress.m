@@ -6,13 +6,13 @@
 //  Copyright © 2018 byRong. All rights reserved.
 //
 
-#import "JKProgressView.h"
+#import "JKMicroProgress.h"
 
-@interface JKProgressView ()
+@interface JKMicroProgress ()
 
 @end
 
-@implementation JKProgressView
+@implementation JKMicroProgress
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

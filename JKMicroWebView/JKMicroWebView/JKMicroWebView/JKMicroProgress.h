@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JKProgressView : UIView
+@interface JKMicroProgress : UIView
 
 @property (nonatomic, assign) CGFloat progress;
 @property (nonatomic, strong) UIView *progressBarView;

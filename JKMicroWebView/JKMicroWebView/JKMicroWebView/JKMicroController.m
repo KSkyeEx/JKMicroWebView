@@ -7,20 +7,20 @@
 //  reserved.
 //
 
-#import "JKWebViewController.h"
-#import "JKProgressView.h"
+#import "JKMicroController.h"
+#import "JKMicroProgress.h"
 
-@interface JKWebViewController () <WKNavigationDelegate, WKUIDelegate>
+@interface JKMicroController () <WKNavigationDelegate, WKUIDelegate>
 //当前Web控件
-@property (nonatomic, strong, readwrite) JKMicroWebView *webView;
+@property (nonatomic, strong, readwrite) JKMicroView *webView;
 //与JS交互的jkdge
 @property (nonatomic, strong, readwrite) JKMicroJSBridge *bridge;
-@property (nonatomic, strong) JKProgressView *progressView; //进度条
+@property (nonatomic, strong) JKMicroProgress *progressView; //进度条
 @property (nonatomic, strong) NSMutableURLRequest *request; // WebView入口请求
 @property (nonatomic, strong) UIImageView *errorImageView; //网页加载错误的时候展示给用户
 @end
 
-@implementation JKWebViewController
+@implementation JKMicroController
 #pragma mark - 初始化
 - (instancetype)initWithURLString:(NSString *)urlString
 {
@@ -362,13 +362,13 @@
 {
     !self.request ?: [self loadURLRequest:self.request];
 }
-- (JKProgressView *)progressView
+- (JKMicroProgress *)progressView
 {
     if (!_progressView) {
         CGFloat progressBarHeight = 2.5f;
         CGRect navigationBarBounds = self.navigationController.navigationBar.bounds;
         CGRect barFrame = CGRectMake(0, navigationBarBounds.size.height - progressBarHeight, navigationBarBounds.size.width, progressBarHeight);
-        _progressView = [[JKProgressView alloc] initWithFrame:barFrame];
+        _progressView = [[JKMicroProgress alloc] initWithFrame:barFrame];
         _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         if (self.progressTintColor) {
             _progressView.progressBarView.backgroundColor = self.progressTintColor;
@@ -377,10 +377,10 @@
     return _progressView;
 }
 
-- (JKMicroWebView *)webView
+- (JKMicroView *)webView
 {
     if (!_webView) {
-        _webView = [[JKMicroWebView alloc] initWithFrame:self.view.bounds];
+        _webView = [[JKMicroView alloc] initWithFrame:self.view.bounds];
         _webView.UIDelegate = self;
         _webView.navigationDelegate = self;
         _webView.allowBack = self.allowBack;
@@ -404,7 +404,7 @@
 
 - (void)clearAllWebCache
 {
-    [JKMicroWebView jk_clearAllWebCache];
+    [JKMicroView jk_clearAllWebCache];
 }
 
 - (void)loadHTMLTemplate:(NSString *)htmlTemplate
