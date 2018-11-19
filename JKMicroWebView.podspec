@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
 
   s.public_header_files = 'JKMicroWebView/**/**/JKMicroWebView.h'
-  s.private_header_files = 'JKMicroWebView/**/**/{JKMicroJSScript}.h'
   s.source       = { :git => "https://github.com/JokerKin/JKMicroWebView.git", :tag => "#{s.version}", :submodules => true}
 
   s.source_files  = "JKMicroWebView", "JKMicroWebView/JKMicroWebView/JKMicroWebView/JKMicroWebView.h"
@@ -35,6 +34,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'JKMicroView' do |sp|
+    sp.dependency 'JKMicroWebView/JKMicroJSBridge'
+    sp.dependency 'JKMicroWebView/JKMicroProgress'
     sp.source_files = 'JKMicroWebView/JKMicroWebView/JKMicroWebView/JKMicro{View,Controller}.{h,m}'
     sp.public_header_files = 'JKMicroWebView/JKMicroWebView/JKMicroWebView/JKMicro{View,Controller}.h'
   end
