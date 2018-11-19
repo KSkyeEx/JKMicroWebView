@@ -9,5 +9,9 @@
 #ifndef JKMicroWebView_h
 #define JKMicroWebView_h
 
+#import "JKMicroController.h"
+#import "JKMicroView.h"
+#import "JKMicroJSBridge.h"
+#import "JKMicroProgress.h"
 
 #endif /* JKMicroWebView_h */

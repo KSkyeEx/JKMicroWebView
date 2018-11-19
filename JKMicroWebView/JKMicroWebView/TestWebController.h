@@ -6,9 +6,9 @@
 //  Copyright © 2018 byRong. All rights reserved.
 //
 
-#import "JKWebViewController.h"
+#import "JKMicroController.h"
 
-@interface TestWebController : JKWebViewController
+@interface TestWebController : JKMicroController
 
 @end
 

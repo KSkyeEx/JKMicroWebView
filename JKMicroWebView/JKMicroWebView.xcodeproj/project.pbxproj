@@ -17,10 +17,10 @@
 		9DB70275219AB4D800702B5F /* JKMicroWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70274219AB4D800702B5F /* JKMicroWebViewUITests.m */; };
 		9DB7028F219AB52B00702B5F /* JKMicroJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */; };
 		9DB70290219AB52B00702B5F /* img_weberror.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70285219AB52A00702B5F /* img_weberror.png */; };
-		9DB70291219AB52B00702B5F /* JKMicroWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70286219AB52A00702B5F /* JKMicroWebView.m */; };
-		9DB70292219AB52B00702B5F /* JKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70289219AB52B00702B5F /* JKWebViewController.m */; };
+		9DB70291219AB52B00702B5F /* JKMicroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70286219AB52A00702B5F /* JKMicroView.m */; };
+		9DB70292219AB52B00702B5F /* JKMicroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB70289219AB52B00702B5F /* JKMicroController.m */; };
 		9DB70293219AB52B00702B5F /* JKMicroJSScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */; };
-		9DB70294219AB52B00702B5F /* JKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7028E219AB52B00702B5F /* JKProgressView.m */; };
+		9DB70294219AB52B00702B5F /* JKMicroProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7028E219AB52B00702B5F /* JKMicroProgress.m */; };
 		9DB70299219AB73000702B5F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DB70298219AB73000702B5F /* index.html */; };
 		9DB7029C219ABADD00702B5F /* TestWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7029B219ABADD00702B5F /* TestWebController.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D74FAF521A252C3008C7B36 /* JKMicroWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKMicroWebView.h; sourceTree = "<group>"; };
 		9DB7024D219AB4D600702B5F /* JKMicroWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKMicroWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB70250219AB4D600702B5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DB70251219AB4D600702B5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,17 +61,16 @@
 		9DB70274219AB4D800702B5F /* JKMicroWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKMicroWebViewUITests.m; sourceTree = "<group>"; };
 		9DB70276219AB4D800702B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroJSBridge.m; sourceTree = "<group>"; };
-		9DB70284219AB52A00702B5F /* JKMicroWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroWebView.h; sourceTree = "<group>"; };
+		9DB70284219AB52A00702B5F /* JKMicroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroView.h; sourceTree = "<group>"; };
 		9DB70285219AB52A00702B5F /* img_weberror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_weberror.png; sourceTree = "<group>"; };
-		9DB70286219AB52A00702B5F /* JKMicroWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroWebView.m; sourceTree = "<group>"; };
+		9DB70286219AB52A00702B5F /* JKMicroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroView.m; sourceTree = "<group>"; };
 		9DB70287219AB52A00702B5F /* JKMicroJSScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroJSScript.h; sourceTree = "<group>"; };
-		9DB70288219AB52A00702B5F /* JKWebViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebViewHeader.h; sourceTree = "<group>"; };
-		9DB70289219AB52B00702B5F /* JKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebViewController.m; sourceTree = "<group>"; };
-		9DB7028A219AB52B00702B5F /* JKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKProgressView.h; sourceTree = "<group>"; };
+		9DB70289219AB52B00702B5F /* JKMicroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroController.m; sourceTree = "<group>"; };
+		9DB7028A219AB52B00702B5F /* JKMicroProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroProgress.h; sourceTree = "<group>"; };
 		9DB7028B219AB52B00702B5F /* JKMicroJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroJSBridge.h; sourceTree = "<group>"; };
 		9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroJSScript.m; sourceTree = "<group>"; };
-		9DB7028D219AB52B00702B5F /* JKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebViewController.h; sourceTree = "<group>"; };
-		9DB7028E219AB52B00702B5F /* JKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKProgressView.m; sourceTree = "<group>"; };
+		9DB7028D219AB52B00702B5F /* JKMicroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMicroController.h; sourceTree = "<group>"; };
+		9DB7028E219AB52B00702B5F /* JKMicroProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMicroProgress.m; sourceTree = "<group>"; };
 		9DB70298219AB73000702B5F /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9DB7029A219ABADD00702B5F /* TestWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWebController.h; sourceTree = "<group>"; };
 		9DB7029B219ABADD00702B5F /* TestWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWebController.m; sourceTree = "<group>"; };
@@ -163,17 +163,17 @@
 		9DB70282219AB50E00702B5F /* JKMicroWebView */ = {
 			isa = PBXGroup;
 			children = (
+				9DB7028D219AB52B00702B5F /* JKMicroController.h */,
+				9DB70289219AB52B00702B5F /* JKMicroController.m */,
 				9DB7028B219AB52B00702B5F /* JKMicroJSBridge.h */,
 				9DB70283219AB52A00702B5F /* JKMicroJSBridge.m */,
 				9DB70287219AB52A00702B5F /* JKMicroJSScript.h */,
 				9DB7028C219AB52B00702B5F /* JKMicroJSScript.m */,
-				9DB70284219AB52A00702B5F /* JKMicroWebView.h */,
-				9DB70286219AB52A00702B5F /* JKMicroWebView.m */,
-				9DB7028A219AB52B00702B5F /* JKProgressView.h */,
-				9DB7028E219AB52B00702B5F /* JKProgressView.m */,
-				9DB7028D219AB52B00702B5F /* JKWebViewController.h */,
-				9DB70289219AB52B00702B5F /* JKWebViewController.m */,
-				9DB70288219AB52A00702B5F /* JKWebViewHeader.h */,
+				9DB7028A219AB52B00702B5F /* JKMicroProgress.h */,
+				9DB7028E219AB52B00702B5F /* JKMicroProgress.m */,
+				9DB70284219AB52A00702B5F /* JKMicroView.h */,
+				9DB70286219AB52A00702B5F /* JKMicroView.m */,
+				9D74FAF521A252C3008C7B36 /* JKMicroWebView.h */,
 			);
 			path = JKMicroWebView;
 			sourceTree = "<group>";
@@ -310,11 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB70294219AB52B00702B5F /* JKProgressView.m in Sources */,
-				9DB70291219AB52B00702B5F /* JKMicroWebView.m in Sources */,
+				9DB70294219AB52B00702B5F /* JKMicroProgress.m in Sources */,
+				9DB70291219AB52B00702B5F /* JKMicroView.m in Sources */,
 				9DB70255219AB4D600702B5F /* ViewController.m in Sources */,
 				9DB7029C219ABADD00702B5F /* TestWebController.m in Sources */,
-				9DB70292219AB52B00702B5F /* JKWebViewController.m in Sources */,
+				9DB70292219AB52B00702B5F /* JKMicroController.m in Sources */,
 				9DB7028F219AB52B00702B5F /* JKMicroJSBridge.m in Sources */,
 				9DB70260219AB4D700702B5F /* main.m in Sources */,
 				9DB70252219AB4D600702B5F /* AppDelegate.m in Sources */,
