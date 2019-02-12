@@ -1,10 +1,9 @@
 //
-//  RRKWebView.m
-//  ByRongInvestment
+//  JKMicroView.m
+//  JKMicroWebView
 //
-//  Created by byRong on 2018/10/15.
-//  Copyright © 2018 Hangzhou Byrong Investment Management Co., Ltd. All rights
-//  reserved.
+//  Created by byRong on 2018/11/13.
+//  Copyright © 2018 byRong. All rights reserved.
 //
 
 #import "JKMicroView.h"

@@ -1,9 +1,9 @@
 //
 //  JKMicroJSBridge.h
-//  XDMicroJSBridge_Example
+//  JKMicroWebView
 //
-//  Created by byRong on 2018/10/23.
-//  Copyright © 2018 458770054@qq.com. All rights reserved.
+//  Created by byRong on 2018/11/13.
+//  Copyright © 2018 byRong. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -1,9 +1,9 @@
 //
 //  JKMicroJSBridge.m
-//  XDMicroJSBridge_Example
+//  JKMicroWebView
 //
-//  Created by byRong on 2018/10/23.
-//  Copyright © 2018 458770054@qq.com. All rights reserved.
+//  Created by byRong on 2018/11/13.
+//  Copyright © 2018 byRong. All rights reserved.
 //
 
 #import "JKMicroJSBridge.h"
@@ -36,8 +36,7 @@ static NSString *nameSpace = @"JKMicroHandler";
     JKMicroJSBridge *bridge = [[JKMicroJSBridge alloc] init];
     bridge.webView = webView;
     // 通过JS与webview内容交互
-    [bridge.webView.configuration.userContentController
-        addUserScript:injectScript];
+    [bridge.webView.configuration.userContentController addUserScript:injectScript];
     // 我们可以在WKScriptMessageHandler代理中接收到
     [bridge.webView.configuration.userContentController addScriptMessageHandler:bridge name:nameSpace];
     return bridge;
@@ -191,8 +190,7 @@ static NSString *nameSpace = @"JKMicroHandler";
 - (void)dealloc
 {
     //清除handler
-    [self.webView.configuration.userContentController
-        removeScriptMessageHandlerForName:nameSpace];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:nameSpace];
     //清除UserScript
     [self.webView.configuration.userContentController removeAllUserScripts];
 }

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JKMicroWebView"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "对WKWebView的封装，提供了JS和OC交互的功能"
   s.description  = "对WKWebView的封装，提供了JS和OC交互的功能。"
   s.homepage     = "https://github.com/JokerKin/JKMicroWebView"
