@@ -39,12 +39,10 @@
     // 是使用h5的视频播放器在线播放, 还是使用原生播放器全屏播放
     self.configuration.allowsInlineMediaPlayback = YES;
     if (@available(iOS 9.0, *)) {
-        //设置视频是否需要用户手动播放  设置为NO则会允许自动播放
-        self.configuration.requiresUserActionForMediaPlayback = YES;
         //设置是否允许画中画技术 在特定设备上有效
         self.configuration.allowsPictureInPictureMediaPlayback = YES;
         //设置请求的User-Agent信息中应用程序名称 iOS9后可用
-        self.configuration.applicationNameForUserAgent = @"ChinaDailyForiPad";
+        self.configuration.applicationNameForUserAgent = @"ChinaDaily";
     }
 }
 
