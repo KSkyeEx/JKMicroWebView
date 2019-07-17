@@ -83,7 +83,6 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.view addSubview:self.webView];
     [self fetchData];
     self.bridge = [JKMicroJSBridge bridgeForWebView:self.webView];
@@ -156,16 +155,12 @@
 //接收到服务器跳转请求之后调用(接收服务器重定向时)
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation: (null_unspecified WKNavigation *)navigation
 {
-    
+
 }
 
 //加载失败时调用(加载内容时发生错误时)
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
-    if (error.code == NSURLErrorCancelled) {
-        // [webView reloadFromOrigin];
-        return;
-    }
     [self didFailLoadWithError:error];
 }
 

@@ -10,7 +10,7 @@
 
 @interface JKMicroView : WKWebView
 
-//是否允许goback返回,默认是YES
+//是否允许手势goback返回,默认是NO
 @property (nonatomic, assign) BOOL allowBack;
 
 #pragma mark - load request

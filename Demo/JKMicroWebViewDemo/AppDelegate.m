@@ -1,52 +1,15 @@
 //
 //  AppDelegate.m
-//  JKMicroWebView
+//  JKMicroWebViewDemo
 //
-//  Created by byRong on 2018/11/13.
-//  Copyright © 2018 byRong. All rights reserved.
+//  Created by byRong on 2019/7/17.
+//  Copyright © 2019 joker. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-/*
- <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
- function jsToOcFunction1()
- {
- window.JKMicroJSBridge.callHandler('jsToOcFunction1',function(response) {
- alert("收到了回调1")
- })
- }
- 
- function jsToOcFunction2()
- {
- window.JKMicroJSBridge.callHandler('jsToOcFunction2',{'data":"我是参数'},function(response) {
- alert(response)
- })
- }
- 
- function showAlert()
- {
- alert("被OC截获到了");
- }
- 
- //OC调用JS改变背景色
- window.JKMicroJSBridge.registerHandler('changeColor', function(data, responseCallback) {
- document.body.style.backgroundColor = randomColor();
- var responseData = { 'Javascript Says':'Right back atcha!' }
- responseCallback(responseData)
- })
- 
- //随机生成颜色
- function randomColor()
- {
- var r=Math.floor(Math.random()*256);
- var g=Math.floor(Math.random()*256);
- var b=Math.floor(Math.random()*256);
- return "rgb("+r+','+g+','+b+")";//所有方法的拼接都可以用ES6新特性`其他字符串{$变量名}`替换
- }
- 
- */
+
 @end
 
 @implementation AppDelegate

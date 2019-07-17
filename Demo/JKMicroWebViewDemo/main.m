@@ -1,9 +1,9 @@
 //
 //  main.m
-//  JKMicroWebView
+//  JKMicroWebViewDemo
 //
-//  Created by byRong on 2018/11/13.
-//  Copyright © 2018 byRong. All rights reserved.
+//  Created by byRong on 2019/7/17.
+//  Copyright © 2019 joker. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
