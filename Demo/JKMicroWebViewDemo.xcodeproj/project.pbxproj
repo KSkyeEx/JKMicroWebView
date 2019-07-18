@@ -92,8 +92,8 @@
 		9D19367E22DEF4B800A8274C /* JKMicroWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9D1936B422DEF54D00A8274C /* img_weberror.png */,
 				9D1936B322DEF54D00A8274C /* index.html */,
+				9D1936B422DEF54D00A8274C /* img_weberror.png */,
 				9D1936AC22DEF52500A8274C /* AppDelegate.h */,
 				9D1936AD22DEF52500A8274C /* AppDelegate.m */,
 				9D1936AB22DEF52500A8274C /* TestWebController.h */,
